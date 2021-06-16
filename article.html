@@ -184,24 +184,26 @@
             <pre>app_directory > templates > same_app_name_directory > abc.html</pre>
             <p>پس وقتی لیست DIRS داخل templates در تنظیمات رو اپدیت میکنیم یعنی علاوه بر اون بیا این آدرسی که من میگم رو
                 هم نگاه کن.</p>
-                <ul>
-                    <li>داخل settings یه متغیر داریم به اسم STATICFILES_FINDERS که به صورت implicit تعریف شده و اگر بخوایم اولویت اش رو تغییر بدیم میتونیم اون رو override کنیم.</li>
-                </ul>
-                <img src="img/image-1024x412.png" alt="">
-                <p>اولین مورد میاد داخل STATICFILES_DIRS رو میگرده</p>
-                <p>دومین مورد میاد داخل پوشه هر app رو میگرده</p>
-                <ul>
-                    <li>جنگو به ما این قابلیت رو میده که در یک پروژه چندین سایت رو مدیریت کنیم و برای این کار میتونیم در settings متغیر SITE_ID رو اضافه کنیم.</li>
-                    <li>در حالت production:</li>
-                </ul>
-                <pre>
+            <ul>
+                <li>داخل settings یه متغیر داریم به اسم STATICFILES_FINDERS که به صورت implicit تعریف شده و اگر بخوایم
+                    اولویت اش رو تغییر بدیم میتونیم اون رو override کنیم.</li>
+            </ul>
+            <img src="img/image-1024x412.png" alt="">
+            <p>اولین مورد میاد داخل STATICFILES_DIRS رو میگرده</p>
+            <p>دومین مورد میاد داخل پوشه هر app رو میگرده</p>
+            <ul>
+                <li>جنگو به ما این قابلیت رو میده که در یک پروژه چندین سایت رو مدیریت کنیم و برای این کار میتونیم در
+                    settings متغیر SITE_ID رو اضافه کنیم.</li>
+                <li>در حالت production:</li>
+            </ul>
+            <pre>
  DEBUG = False
  SECURE_BROWSER_XSS_FILTER = True
  SESSION_COOKIE_SECURE = True
  CSRF_COOKIE_SECURE = True
                 </pre>
         </main>
-        
+
     </div>
     <!-- previues nav -->
     <div class="nav-previous">
@@ -213,7 +215,7 @@
         <form action="">
             <label for="comment">دیدگاه</label>
             <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
-            
+
             <label for="name">نام
                 <span>*</span>
             </label>

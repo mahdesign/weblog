@@ -300,7 +300,7 @@ ul.dropdown-nav {
 .content .post,
 .content .contact,
 .content .article,
-.comment{
+.comment {
     width: 58%;
     margin-left: 5%;
 }
@@ -453,8 +453,8 @@ textarea,
     border: 1px solid #e2e2e2;
 }
 
-.contact input[type='submit'] ,
-.comment input[type='submit']{
+.contact input[type='submit'],
+.comment input[type='submit'] {
     border: 0;
     background: #4B515D;
     font-size: 13px;
@@ -483,7 +483,7 @@ form {
     background-color: #fff;
     height: fit-content;
     margin-bottom: 5%;
-    
+
 }
 
 .content .article img {
@@ -556,7 +556,7 @@ blockquote {
 
 .nav-previous {
     position: relative;
-    display:flex;
+    display: flex;
 }
 
 .nav-previous a {
@@ -584,33 +584,58 @@ blockquote {
 .nav-previous i {
     font-size: 20px;
 }
-.comment{
+
+.comment {
     background-color: #fff;
     position: relative;
-    top:200px;
+    top: 200px;
     right: 35%;
 
     margin-bottom: 5%;
 }
+
 .comment h3,
-.comment p{
+.comment p {
     margin-right: 5%;
 }
-.comment h3{
+
+.comment h3 {
     font-size: 23px;
     font-weight: 700;
     padding-top: 22px;
     margin-top: 20px;
 }
-.comment input[type="checkbox"]{
+
+.comment input[type="checkbox"] {
     width: auto;
 }
-.comment .save-cookies{
+
+.comment .save-cookies {
     font-size: 20px;
 }
+
+.go-up {
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.go-up .fa {
+    opacity: 0;
+    font-size: 40px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    background: #1e282d;
+    width: 50px;
+    text-align: center;
+
+}
+
 @media only screen and (max-width:755px) {
 
-    .content{
+    .content {
         flex-direction: column-reverse;
         justify-content: center;
     }
@@ -634,6 +659,24 @@ blockquote {
 
     .content .sidebar {
         width: 90%;
+        top: 810px;
+        position: relative;
+
+
+    }
+
+    .comment {
+        top: -843px;
+
+    }
+
+    .nav-previous {
+
+        bottom: 1065px;
+    }
+
+    .footer {
+        margin-top: 140px;
     }
 
     .footer .footer-group {
@@ -716,13 +759,15 @@ blockquote {
     }
 
     .content .article,
-    .comment{
+    .comment {
         width: 100%;
     }
-    .comment{
+
+    .comment {
         right: 0;
     }
+
     .nav-previous a {
-        top:170px
+        top: 170px
     }
 }

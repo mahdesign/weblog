@@ -67,7 +67,7 @@
                         <li><a href="">سایت های به درد بخور</a></li>
                     </ul>
                 </li>
-                <li class="item"><a href="">تماس با من</a></li>
+                <li class="item"><a href="تماس-با-من.html">تماس با من</a></li>
                 <li><a href="">درباره من</a></li>
             </ul>
         </nav>
@@ -80,8 +80,8 @@
     </div>
     <!-- content goes here -->
     <div class="content">
-           <!-- sides bar -->
-           <aside class="sidebar">
+        <!-- sides bar -->
+        <aside class="sidebar">
             <h2>به وبلاگ من خوش آمدید:)</h2>
             <figure class="author">
                 <img src="img/سروش-ذاکر-شبیری.jpg" alt="">
@@ -112,7 +112,7 @@
             <section class="post-item">
 
                 <div class="content-post-item">
-                    <h2><a href="">میکرونکات جنگو-بخش اول(setting.py)</a></h2>
+                    <h2><a href="article.html">میکرونکات جنگو-بخش اول(setting.py)</a></h2>
                     <p>خیلی وقت ها پیش میاد که ما حین انجام دادن پروژه های مختلف یا مطالعه کتاب ها به نکاتی بر
                         میخوریم
                         که به خودمون میگیم…</p>
@@ -196,8 +196,6 @@
                 <img src="img/python.png" alt="">
             </section>
         </main>
-     
-
     </div>
     <footer class="container-fluid footer ">
         <div class="footer-group">
@@ -224,6 +222,7 @@
 
             </div>
         </div>
+
     </footer>
     <div class="designer container-fluid">
         <div class="text-design">
@@ -231,7 +230,9 @@
                 <a href="">سروش ذاکرشبیری</a>
             </span>
         </div>
-
+        <a href="#" title="رفتن به بالا" class="go-up">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
     </div>
 </body>
 <script>
@@ -241,6 +242,21 @@
             $('.site-branding').css('top', '707px');
             $('.site-branding').css('z-index', '99');
             $('.content').css('top', '825px');
+        })
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            var heigtwindow = window.innerHeight
+            if (scrollTop > heigtwindow) {
+                $(".go-up .fa").css({
+                    'opacity': 100,
+                    'transition': 'opacity 1s ease',
+                });
+            } else {
+                $(".go-up .fa").css({
+                    opacity: 0,
+                    'transition': 'opacity 1s ease',
+                });
+            }
         })
     });
 </script>
